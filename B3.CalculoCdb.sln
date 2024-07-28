@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6DFB5837-B70
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EEF4A997-0B7C-4464-A374-3817C4825486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B3.CalculoCdb.Tests", "B3.CalculoCdb.Tests\B3.CalculoCdb.Tests.csproj", "{2C3E50DD-6827-4FB9-A2BD-6025ECE224BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B3.CalculoCdb.Tests", "B3.CalculoCdb.Tests\B3.CalculoCdb.Tests.csproj", "{2C3E50DD-6827-4FB9-A2BD-6025ECE224BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B3.CalculoCdb.Domain", "B3.CalculoCdb.Domain\B3.CalculoCdb.Domain.csproj", "{C145E4D9-D72A-40BC-B238-5E6495EBC932}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B3.CalculoCdb.Domain", "B3.CalculoCdb.Domain\B3.CalculoCdb.Domain.csproj", "{C145E4D9-D72A-40BC-B238-5E6495EBC932}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B3.CalculoCdb.Application", "B3.CalculoCdb.Application\B3.CalculoCdb.Application.csproj", "{A2ADA9E1-951F-4A9C-A577-B97C7BD2196B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B3.CalculoCdb.Application", "B3.CalculoCdb.Application\B3.CalculoCdb.Application.csproj", "{A2ADA9E1-951F-4A9C-A577-B97C7BD2196B}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "b3.calculocdb.client", "b3.calculocdb.client\b3.calculocdb.client.esproj", "{BBAAA59C-5F24-45E7-BCD2-A04643D77FA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,12 @@ Global
 		{A2ADA9E1-951F-4A9C-A577-B97C7BD2196B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2ADA9E1-951F-4A9C-A577-B97C7BD2196B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2ADA9E1-951F-4A9C-A577-B97C7BD2196B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBAAA59C-5F24-45E7-BCD2-A04643D77FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAAA59C-5F24-45E7-BCD2-A04643D77FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAAA59C-5F24-45E7-BCD2-A04643D77FA0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BBAAA59C-5F24-45E7-BCD2-A04643D77FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAAA59C-5F24-45E7-BCD2-A04643D77FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBAAA59C-5F24-45E7-BCD2-A04643D77FA0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

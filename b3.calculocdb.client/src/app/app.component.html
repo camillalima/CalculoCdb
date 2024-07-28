@@ -1,0 +1,41 @@
+<div style="display: flex; height: 100%; justify-content: center; align-items: center; ">
+  <form (ngSubmit)="getCalculoCdb()">
+    <fieldset class="border py-2 px-2">
+      <h1>Cálculo CDB</h1>
+      <div>
+        <div style="padding: 10px;">
+          <label style="display: flex; height: 100%; justify-content: center; align-items: center;">Valor do investimento</label>
+          <input type="number" autofocus id="inputValorInvestido" #inputValorInvestido (blur)="validateValorInvestido(inputValorInvestido)" >
+          <div *ngIf="errorInputValorInvestidoMessage" class="error-message" style="color: red;">
+            {{ errorInputValorInvestidoMessage }}
+          </div>
+        </div>
+
+        <div style="padding: 10px;">
+          <label style="display: flex; height: 100%; justify-content: center; align-items: center;">Meses investindo</label>
+          <input type="text" id="inputPrazo" (input)="removeCaracterEspecial(inputPrazo)" #inputPrazo (blur)="validatePrazo(inputPrazo)" >
+          <div *ngIf="errorInputPrazoMessage" class="error-message" style="color: red;">
+            {{ errorInputPrazoMessage }}
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" [attr.disabled]="errorInputValorInvestidoMessage || errorInputPrazoMessage ? true : null">Calcular</button>
+    </fieldset>
+  </form>
+
+  <div *ngIf="calculoResponse.valorBruto">
+    <fieldset class="border py-2 px-2" *ngIf="errorInputValorInvestidoMessage || errorInputPrazoMessage ? null : true">
+      <h3>Resultado:</h3>
+      <p>Valor Bruto: {{ calculoResponse.valorBruto | currency:'BRL' }}</p>
+      <p>Valor Líquido: {{ calculoResponse.valorLiquido | currency:'BRL' }}</p>
+    </fieldset>
+  </div>
+
+  <div *ngIf="erroResponse.erro">
+    <fieldset class="border py-2 px-2">
+      <h2>Resultado</h2>
+      <p>{{ erroResponse.erro }}</p>
+    </fieldset>
+  </div>
+</div>
